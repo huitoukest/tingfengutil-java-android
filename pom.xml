@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- 存放安卓手机上独有的一些工具 -->
+  <groupId>com.tingfeng</groupId>
+  <artifactId>tingfengutil-java-android</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>tingfengutil-java-android</name>
+  
+   <dependencies>
+	  	<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.google.android</groupId>
+		    <artifactId>android</artifactId>
+		    <version>4.1.1.4</version>
+		</dependency>
+	<dependency>
+	    <groupId>com.google.android</groupId>
+	    <artifactId>support-v4</artifactId>
+	    <version>r7</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/cn.jpush.api/jpush-client -->
+	<dependency>
+	    <groupId>cn.jpush.api</groupId>
+	    <artifactId>jpush-client</artifactId>
+	    <version>3.3.3</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.baidu.mapapi/base -->
+	<!-- <dependency>
+	    <groupId>com.baidu.mapapi</groupId>
+	    <artifactId>base</artifactId>
+	    <version>3.6.0</version>
+	</dependency>	 -->
+  </dependencies>
+  
+  
+  
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    <plugins>
+      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>  
+            </configuration>  
+        </plugin>
+	  <plugin>  
+	        <groupId>org.apache.maven.plugins</groupId>  
+	        <artifactId>maven-surefire-plugin</artifactId>  
+	        <version>2.18.1</version>  
+	        <configuration>
+	          <skipTests>true</skipTests>  
+	        </configuration>  
+      </plugin>  
+    </plugins>
+  </build>
+</project>
